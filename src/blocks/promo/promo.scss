@@ -1,0 +1,68 @@
+.promo {
+    height: 100vh;
+    min-height: 840px;
+    background: url(../imgs/background/bg.svg) center (center/cover) no-repeat;
+    @include xl {
+        min-height: 650px;
+    }
+    @include lg {
+        min-height: 600px;
+    }
+    @include sm {
+        min-height: 550px;
+    }
+    @include xs {
+        height: 432px;
+        min-height: 432px;
+    }
+    &-wrapper {
+        padding: 0 305px 0 128px;
+        @include xl {
+            padding: 0 250px 0 58px;
+        }
+        @include lg {
+            padding: 0 200px 0 28px;
+        }
+        @include md {
+            padding: 0 28px;
+        }
+        @include sm {
+            padding: 0;
+        }
+        @include xs {
+            padding: 0 20px;
+        }
+        @include xs {
+            padding: 0 10px;
+        }
+    }
+    &__title {
+        color: $white;
+        margin-top: 152px;
+        @include xl {
+            margin-top: 80px;
+        }
+        @include sm {
+            margin-top: 60px;
+        }
+        @include xs {
+            margin-top: 72px;
+            width: 335px;
+        }
+    }
+    &__btn {
+        margin-top: 80px;
+        width: 423px;
+        border-radius: 2px;
+        @include lg {
+            margin-top: 60px;
+            width: 400px;
+        }
+        @include md {
+            width: 350px;
+        }
+        @include xs {
+            display: none;
+        }
+    }
+}

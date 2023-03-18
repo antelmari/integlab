@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include("blocks/head/head.html", { "title": "Каталог" })
+
+    <body>
+        @@include("blocks/mheader/mheader.html")
+
+        <section class="marketplace">
+            <header class="header">
+                <div class="marketplace-header-wrapper wrapper">
+                    <div class="header__logo">
+                        <a href=""><img src="imgs/header/logo.svg" alt="logo"></a>
+                    </div>
+                    <nav class="header-nav--mini">
+                        <a href="" class="header-nav__link">Студия</a>
+                        <a href="" class="header-nav__link">
+                            <div class="header-nav__login">
+                                <svg><use xlink:href="imgs/sprite.svg#login"></use></svg>
+                            </div>
+                            Войти
+                        </a>
+                        <a href="" class="header-nav__link">
+                            <div class="header-nav__icon">
+                                <svg><use xlink:href="imgs/sprite.svg#basket"></use></svg>
+                            </div>
+                            Корзина
+                        </a>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="marketplace-wrapper wrapper">
+                <div class="marketplace-menu">
+                    <div class="marketplace-catalog">
+                        <button class="marketplace-catalog__btn">
+                            <div class="marketplace-catalog__hamburger">
+                                <svg><use xlink:href="imgs/sprite.svg#hamburger"></use></svg>
+                            </div>
+                            <div class="marketplace-catalog__close">
+                                <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                            </div>
+                            <div class="marketplace-catalog__text">Каталог решений</div>
+                        </button>
+                        <div class="marketplace-catalog-list">
+                            <div class="marketplace-catalog-list__item">
+                                <div class="marketplace-catalog-list__img">
+                                    <svg><use xlink:href="imgs/sprite.svg#catalog_bag"></use></svg>
+                                </div>
+                                <div class="marketplace-catalog-list__text">Интернет-магазин</div>
+                                <div class="marketplace-catalog-list-details"></div>
+                            </div>
+                            <div class="marketplace-catalog-list__item">
+                                <div class="marketplace-catalog-list__img">
+                                    <svg><use xlink:href="imgs/sprite.svg#catalog_responsive-website"></use></svg>
+                                </div>
+                                <div class="marketplace-catalog-list__text">Готовые сайты</div>
+                                <div class="marketplace-catalog-list-details">
+                                    <div class="marketplace-catalog-list-details__item">
+                                        <div class="marketplace-catalog-list-details__text">
+                                            Landing page
+                                            <div class="marketplace-catalog-list-details__arrow">
+                                                <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="marketplace-catalog-list-details__item">
+                                        <div class="marketplace-catalog-list-details__text">
+                                            Каталог товаров, услуг
+                                            <div class="marketplace-catalog-list-details__arrow">
+                                                <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="marketplace-catalog-list-details__item">
+                                        <div class="marketplace-catalog-list-details__text">
+                                            Корпоративный сайт
+                                            <div class="marketplace-catalog-list-details__arrow">
+                                                <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="marketplace-catalog-list-details-products">
+                                            <div class="marketplace-catalog-list-details-products__item">Государство</div>
+                                            <div class="marketplace-catalog-list-details-products__item">Медицина</div>
+                                            <div class="marketplace-catalog-list-details-products__item">Недвижимость</div>
+                                            <div class="marketplace-catalog-list-details-products__item">Образование</div>
+                                            <div class="marketplace-catalog-list-details-products__item">Ресторанный бизнес</div>
+                                            <div class="marketplace-catalog-list-details-products__item">Строительство</div>
+                                            <div class="marketplace-catalog-list-details-products__item">ТСЖ, ЖСК</div>
+                                            <div class="marketplace-catalog-list-details-products__item">Спорт, туризм</div>
+                                            <div class="marketplace-catalog-list-details-products__item">Другое</div>
+                                        </div>
+                                    </div>
+                                    <div class="marketplace-catalog-list-details__item">
+                                        <div class="marketplace-catalog-list-details__text">
+                                            Информационный портал
+                                            <div class="marketplace-catalog-list-details__arrow">
+                                                <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="marketplace-catalog-list-details__item">
+                                        <div class="marketplace-catalog-list-details__text">
+                                            Персональный сайт
+                                            <div class="marketplace-catalog-list-details__arrow">
+                                                <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="marketplace-catalog-list__item">
+                                <div class="marketplace-catalog-list__img">
+                                    <svg><use xlink:href="imgs/sprite.svg#catalog_for-shop"></use></svg>
+                                </div>
+                                <div class="marketplace-catalog-list__text">Для интернет-магазина</div>
+                            </div>
+                            <div class="marketplace-catalog-list__item">
+                                <div class="marketplace-catalog-list__img">
+                                    <svg><use xlink:href="imgs/sprite.svg#catalog_headphones"></use></svg>
+                                </div>
+                                <div class="marketplace-catalog-list__text">Поддержка клиентов</div>
+                                <div class="marketplace-catalog-list-details"></div>
+                            </div>
+                            <div class="marketplace-catalog-list__item">
+                                <div class="marketplace-catalog-list__img">
+                                    <svg><use xlink:href="imgs/sprite.svg#catalog_entrance"></use></svg>
+                                </div>
+                                <div class="marketplace-catalog-list__text">Маркетинг, реклама</div>
+                            </div>
+                            <div class="marketplace-catalog-list__item">
+                                <div class="marketplace-catalog-list__img">
+                                    <svg><use xlink:href="imgs/sprite.svg#catalog_integration"></use></svg>
+                                </div>
+                                <div class="marketplace-catalog-list__text">Интеграция</div>
+                                <div class="marketplace-catalog-list-details"></div>
+                            </div>
+                            <div class="marketplace-catalog-list__item">
+                                <div class="marketplace-catalog-list__img">
+                                    <svg><use xlink:href="imgs/sprite.svg#catalog_tools"></use></svg>
+                                </div>
+                                <div class="marketplace-catalog-list__text">Инструменты</div>
+                            </div>
+                            <div class="marketplace-catalog-list__item">
+                                <div class="marketplace-catalog-list__img">
+                                    <svg><use xlink:href="imgs/sprite.svg#catalog_phone"></use></svg>
+                                </div>
+                                <div class="marketplace-catalog-list__text">Мобильные приложения</div>
+                            </div>
+                            <div class="marketplace-catalog-list__item">
+                                <div class="marketplace-catalog-list__img">
+                                    <svg><use xlink:href="imgs/sprite.svg#catalog_bitrix"></use></svg>
+                                </div>
+                                <div class="marketplace-catalog-list__text">Решения для Битрикс 24</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marketplace-catalog--mobile">
+                        <a href="#popup-catalog" class="popup">
+                            <button class="marketplace-catalog__btn">
+                                <div class="marketplace-catalog__hamburger">
+                                    <svg><use xlink:href="imgs/sprite.svg#hamburger"></use></svg>
+                                </div>
+                                <div class="marketplace-catalog__close">
+                                    <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                </div>
+                                <div class="marketplace-catalog__text">Каталог решений</div>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="marketplace-search">
+                        <form class="marketplace-search__form">
+                            <div class="marketplace-search__icon">
+                                <svg><use xlink:href="imgs/sprite.svg#search"></use></svg>
+                            </div>
+                            <input class="marketplace-search__input" type="text" placeholder="Найти решение..">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="catalog-wrapper wrapper">
+                <h2 class="catalog__title title--main">Лучшие предложения</h2>
+                <div class="catalog-cards">
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--1.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--1.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Некст - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--2.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--2.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Оптимус - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "4" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">24 900 ₽</div>
+                                <div class="catalog-cards__price--new">19 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--3.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--3.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Digital Web, Deluxe - многофункциональный интернет-магазин 2в1</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--4.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--4.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Маркет - адаптивный интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">19 900 ₽</div>
+                                <div class="catalog-cards__price--new">15 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--1.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--1.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Некст - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--2.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--2.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Оптимус - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "4" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">24 900 ₽</div>
+                                <div class="catalog-cards__price--new">19 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--3.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--3.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Digital Web, Deluxe - многофункциональный интернет-магазин 2в1</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--4.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--4.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Маркет - адаптивный интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">19 900 ₽</div>
+                                <div class="catalog-cards__price--new">15 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--1.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--1.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Некст - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--2.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--2.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Оптимус - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "4" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">24 900 ₽</div>
+                                <div class="catalog-cards__price--new">19 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--3.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--3.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Digital Web, Deluxe - многофункциональный интернет-магазин 2в1</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--4.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--4.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Маркет - адаптивный интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">19 900 ₽</div>
+                                <div class="catalog-cards__price--new">15 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--1.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--1.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Некст - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--2.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--2.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Оптимус - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "4" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">24 900 ₽</div>
+                                <div class="catalog-cards__price--new">19 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--3.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--3.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Digital Web, Deluxe - многофункциональный интернет-магазин 2в1</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--4.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--4.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Маркет - адаптивный интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">19 900 ₽</div>
+                                <div class="catalog-cards__price--new">15 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--1.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--1.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Некст - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--2.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--2.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Оптимус - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "4" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">24 900 ₽</div>
+                                <div class="catalog-cards__price--new">19 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-cards--mobile">
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--1.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--1.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Некст - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--2.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--2.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Оптимус - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "4" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">24 900 ₽</div>
+                                <div class="catalog-cards__price--new">19 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--3.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--3.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Digital Web, Deluxe - многофункциональный интернет-магазин 2в1</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--4.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--4.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Маркет - адаптивный интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">19 900 ₽</div>
+                                <div class="catalog-cards__price--new">15 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--1.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--1.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Некст - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--2.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--2.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Аспро: Оптимус - интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "4" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">24 900 ₽</div>
+                                <div class="catalog-cards__price--new">19 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--3.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--3.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Digital Web, Deluxe - многофункциональный интернет-магазин 2в1</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--single">29 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-cards__card">
+                        <div class="catalog-cards__img">
+                            <img src="imgs/marketplace/product--4.jpg" alt="product">
+                            <div class="catalog-cards__img--mini">
+                                <img src="imgs/marketplace/icon--4.jpg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="catalog-cards-text">
+                            <div>
+                                <div class="catalog-cards__title">Маркет - адаптивный интернет-магазин</div>
+                                @@include("blocks/rating/rating.html", { "rating": "5" })
+                            </div>
+                            <div class="catalog-cards__price">
+                                <div class="catalog-cards__price--old">19 900 ₽</div>
+                                <div class="catalog-cards__price--new">15 920 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-pagination">
+                    <a href="">
+                        <button class="catalog-pagination__button catalog-pagination__button--prev" disabled>
+                            <svg><use xlink:href="imgs/sprite.svg#arrow-right"></use></svg>
+                        </button>
+                    </a>
+                    <div class="catalog-pagination-list">
+                        <a href="" class="catalog-pagination__item catalog-pagination__item--active">1</a>
+                        <a href="" class="catalog-pagination__item">2</a>
+                        <a href="" class="catalog-pagination__item">3</a>
+                        <a href="" class="catalog-pagination__item">4</a>
+                        <a href="" class="catalog-pagination__item">5</a>
+                        <a href="" class="catalog-pagination__item">6</a>
+                    </div>
+                    <a href="">
+                        <button class="catalog-pagination__button catalog-pagination__button--next">
+                            <svg><use xlink:href="imgs/sprite.svg#arrow-right"></use></svg>
+                        </button>
+                    </a>
+                </div>
+                <div class="catalog-pagination--mobile">
+                    <a href="">
+                        <button class="catalog-pagination__button catalog-pagination__button--prev" disabled>
+                            <svg><use xlink:href="imgs/sprite.svg#arrow-right"></use></svg>
+                        </button>
+                    </a>
+                    <div class="catalog-pagination-list">
+                        <a href="" class="catalog-pagination__item catalog-pagination__item--active">1</a>
+                        <a href="" class="catalog-pagination__item">2</a>
+                        <a href="" class="catalog-pagination__item">3</a>
+                    </div>
+                    <a href="">
+                        <button class="catalog-pagination__button catalog-pagination__button--next">
+                            <svg><use xlink:href="imgs/sprite.svg#arrow-right"></use></svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="catalog-footer">
+            <div class="footer-wrapper wrapper">
+                <div class="footer-main">
+                    <div class="footer__logo">
+                        <a href=""><img src="imgs/header/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="footer-catalog">
+                        <div class="footer__title">Каталог</div>
+                        <div class="footer-catalog-items">
+                            <div class="footer-catalog-column">
+                                <div class="footer__item"><a href="">Интернет-магазин</a></div>
+                                <div class="footer__item"><a href="">Готовые сайты</a></div>
+                                <div class="footer__item"><a href="">Для интернет-магазина</a></div>
+                            </div>
+                            <div class="footer-catalog-column">
+                                <div class="footer__item"><a href="">Поддержка клиентов</a></div>
+                                <div class="footer__item"><a href="">Маркетинг, реклама</a></div>
+                                <div class="footer__item"><a href="">Интеграция</a></div>
+                            </div>
+                            <div class="footer-catalog-column">
+                                <div class="footer__item"><a href="">Мобильные приложения</a></div>
+                                <div class="footer__item"><a href="">Решения для Битрикс 24</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="footer__title">Лицензии</div>
+                        <div class="footer__item"><a href="">1С-Битрикс</a></div>
+                        <div class="footer__item"><a href="">Битрикс-24</a></div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="footer__title">Информация</div>
+                        <div class="footer__item"><a href="">Проекты</a></div>
+                        <div class="footer__item"><a href="">О нас</a></div>
+                        <div class="footer__item"><a href="">Маркетплейс</a></div>
+                    </div>
+                </div>
+                <div class="footer-additionally-row">
+                    <div class="footer-additionally-left">
+                        <div class="footer-additionally__info">© 2016-2022 ООО «Integlab». Все права защищены</div>
+                        <div class="footer-additionally-links">
+                            <a href="" class="footer-additionally__link">Политика конфиденциальности</a>
+                            <a href="" class="footer-additionally__link">Соглашение об использовании сайта</a>
+                        </div>
+                    </div>
+                    <div class="footer-additionally-icon">
+                        <div class="footer-additionally-icon__text">Быстро с 1С-Битрикс</div>
+                        <div class="footer-additionally-icon__img">
+                            <svg><use xlink:href="imgs/sprite.svg#1c-footer"></use></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="footer-mobile">
+            <div class="footer-mobile-wrapper-pb wrapper">
+                <div class="footer__logo">
+                    <a href=""><img src="imgs/header/logo.svg" alt="logo"></a>
+                </div>
+                <div class="footer-mobile-options">
+                    <div class="footer-mobile-option">
+                        <div class="footer-mobile-option__header">
+                            <div class="footer-mobile-option__title">Каталог</div>
+                            <div class="footer-mobile-option__arrow">
+                                <svg><use xlink:href="imgs/sprite.svg#arrow-right"></use></svg>
+                            </div>
+                        </div>
+                        <div class="footer-mobile-option__list">
+                            <div class="footer-mobile-option__list-column">
+                                <div class="footer-mobile-option__list-left">
+                                    <div class="footer__item"><a href="">Интернет-магазин</a></div>
+                                    <div class="footer__item"><a href="">Готовые сайты</a></div>
+                                    <div class="footer__item"><a href="">Для интернет-магазина</a></div>
+                                    <div class="footer__item"><a href="">Поддержка клиентов</a></div>
+                                </div>
+                                <div class="footer-mobile-option__list-right">
+                                    <div class="footer__item"><a href="">Маркетинг, реклама</a></div>
+                                    <div class="footer__item"><a href="">Интеграция</a></div>
+                                    <div class="footer__item"><a href="">Мобильные приложения</a></div>
+                                    <div class="footer__item"><a href="">Решения для Битрикс 24</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-mobile-option">
+                        <div class="footer-mobile-option__header">
+                            <div class="footer-mobile-option__title">Лицензии</div>
+                            <div class="footer-mobile-option__arrow">
+                                <svg><use xlink:href="imgs/sprite.svg#arrow-right"></use></svg>
+                            </div>
+                        </div>
+                        <div class="footer-mobile-option__list">
+                            <div class="footer__item"><a href="">1С-Битрикс</a></div>
+                            <div class="footer__item"><a href="">Битрикс-24</a></div>
+                        </div>
+                    </div>
+                    <div class="footer-mobile-option">
+                        <div class="footer-mobile-option__header">
+                            <div class="footer-mobile-option__title">Информация</div>
+                            <div class="footer-mobile-option__arrow">
+                                <svg><use xlink:href="imgs/sprite.svg#arrow-right"></use></svg>
+                            </div>
+                        </div>
+                        <div class="footer-mobile-option__list">
+                            <div class="footer__item"><a href="">Проекты</a></div>
+                            <div class="footer__item"><a href="">О нас</a></div>
+                            <div class="footer__item"><a href="">Маркетплейс</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-mobile-additionally">
+                    <a href="" class="footer-additionally__link">Политика конфиденциальности</a>
+                    <a href="" class="footer-additionally__link">Соглашение об использовании сайта</a>
+                    <div class="footer-additionally__info">© 2016-2022 ООО «Integlab». Все права защищены</div>
+                </div>
+            </div>
+        </footer>
+
+        @@include("blocks/popup/popup.html")
+    </body>
+</html>

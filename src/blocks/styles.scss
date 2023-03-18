@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gravity', sans-serif;
+}
+
+body {
+    min-width: 355px;
+    background-color: #242424;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap');
+
+// Технические блоки
+@import "../fonts/fonts.scss";
+@import "../consts/consts.scss";
+@import "../mixins/mixins.scss";
+
+// Общие блоки (их можно миксовать)
+@import "checkbox/checkbox.scss";
+@import "buttons/buttons.scss";
+@import "header/header.scss";
+@import "titles/titles.scss";
+@import "wrapper/wrapper.scss";
+@import "footer/footer.scss";
+@import "popup/popup.scss";
+@import "rating/rating.scss";
+@import "mheader/mheader.scss";
+@import "counter/counter.scss";
+
+// Блоки
+@import "authorization/authorization.scss";
+@import "promo/promo.scss";
+@import "start/start.scss";
+@import "technology/technology.scss";
+@import "projects/projects.scss";
+@import "calculator/calculator.scss";
+@import "services/services.scss";
+@import "cases/cases.scss";
+@import "details/details.scss";
+@import "vacancies/vacancies.scss";
+@import "license/license.scss";
+@import "order/order.scss";
+@import "marketplace/marketplace.scss";

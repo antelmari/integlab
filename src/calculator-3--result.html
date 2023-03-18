@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include("blocks/head/head.html", { "title": "Калькулятор 3" })
+
+    <body>
+        @@include("blocks/promo/promo.html")
+
+        <section class="calculator">
+            <div class="calculator-wrapper wrapper">
+                <h2 class="calculator__title title--main">Начнем проект?</h2>
+                <div class="calculator-subtitle--mobile">
+                    <h3 class="calculator-subtitle__text title--subtitle">Шаг</h3>
+                    <div class="calculator-subtitle__step title--subtitle">5/<span>5</span></div>
+                </div>
+                <div class="calculator-steps">
+                    <form action="#" class="calculator-form calculator-form--desktop">
+                        <h3 class="calculator-form__title title--subtitle">Ваши контактные данные</h3>
+                        <div class="calculator-form-inputs">
+                            <div class="calculator-form-inputs-container">
+                                <input type="text" placeholder="Имя *" class="calculator-form__input" required>
+                                <div class="calculator-form__signature">Имя *</div>
+                                <div class="calculator-form__error">!</div>
+                            </div>
+                            <div class="calculator-form-inputs-container">
+                                <input type="tel" placeholder="Телефон *" class="calculator-form__input" required>
+                                <div class="calculator-form__signature">Телефон *</div>
+                                <div class="calculator-form__error">!</div>
+                            </div>
+                            <div class="calculator-form-inputs-container">
+                                <input type="email" placeholder="E-mail *" class="calculator-form__input" required>
+                                <div class="calculator-form__signature">E-mail *</div>
+                                <div class="calculator-form__error">!</div>
+                            </div>
+                        </div>
+                        <div class="calculator-form-row">
+                            <button class="calculator-form-file btn--add">
+                                <input type="file" class="calculator-form-file__input">
+                                <div class="btn--add__file">
+                                    <svg><use xlink:href="imgs/sprite.svg#file"></use></svg>
+                                </div>
+                                <div class="btn--add__text">Приложить файл</div>
+                            </button>
+                            <div class="calculator-form__message">Файл: до 20МВ<br>Формат: doc, docx, pdf, zip, rar, jpg, png</div>
+                        </div>
+                        <div class="checkbox calculator-form-checkbox">
+                            <input id="calculator-form-checkbox-1" type="checkbox" class="checkbox__input">
+                            <label for="calculator-form-checkbox-1" class="checkbox__label"></label>
+                            <div class="calculator-form__agreement">
+                                Я согласен на обработку&nbsp;
+                                <a href="" class="calculator-form__link">персональных данных</a>
+                            </div>
+                        </div>
+                        <button class="calculator-form__btn btn">Начать проект</button>
+                    </form>
+                    <div class="calculator-steps-result">
+                        <h3 class="calculator-steps__subtitle title--subtitle">Ваш проект</h3>
+                        <div class="calculator-steps-project">
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Выберите тип проекта</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        Техническая поддержка
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Выберите платформу</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        1C - Битрикс
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Тип поддержки</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        Разовый
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Тип специалиста</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        Обычный (время реакции 30 минут)
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Выберите подходящий тариф</div>
+                                <div class="calculator-steps-project__choice calculator-steps-project__choice--result">
+                                    <div class="calculator-steps-project__type">
+                                        10 часов - 2900 р/час
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <form action="#" class="calculator-form calculator-form--mobile">
+                    <h3 class="calculator-form__title title--subtitle">Ваши контактные данные</h3>
+                    <div class="calculator-form-inputs">
+                        <div class="calculator-form-inputs-container">
+                            <input type="text" placeholder="Имя *" class="calculator-form__input" required>
+                            <div class="calculator-form__signature">Имя *</div>
+                            <div class="calculator-form__error">!</div>
+                        </div>
+                        <div class="calculator-form-inputs-container">
+                            <input type="tel" placeholder="Телефон *" class="calculator-form__input" required>
+                            <div class="calculator-form__signature">Телефон *</div>
+                            <div class="calculator-form__error">!</div>
+                        </div>
+                        <div class="calculator-form-inputs-container">
+                            <input type="email" placeholder="E-mail *" class="calculator-form__input" required>
+                            <div class="calculator-form__signature">E-mail *</div>
+                            <div class="calculator-form__error">!</div>
+                        </div>
+                    </div>
+                    <div class="calculator-form-row">
+                        <button class="calculator-form-file btn--add">
+                            <input type="file" class="calculator-form-file__input">
+                            <div class="btn--add__file">
+                                <svg><use xlink:href="imgs/sprite.svg#file"></use></svg>
+                            </div>
+                            <div class="btn--add__text">Приложить файл</div>
+                        </button>
+                        <div class="calculator-form__message">Файл: до 20МВ<br>Формат: doc, docx, pdf, zip, rar, jpg, png</div>
+                    </div>
+                    <div class="checkbox calculator-form-checkbox">
+                        <input id="calculator-form-checkbox-2" type="checkbox" class="checkbox__input">
+                        <label for="calculator-form-checkbox-2" class="checkbox__label"></label>
+                        <div class="calculator-form__agreement">
+                            Я согласен на обработку&nbsp;
+                            <a href="" class="calculator-form__link">персональных данных</a>
+                        </div>
+                    </div>
+                    <button class="calculator-form__btn btn">Начать проект</button>
+                </form>
+            </div>
+        </section>
+
+        @@include("blocks/technology/technology.html")
+        @@include("blocks/projects/projects.html", { "title": "Недавние проекты" })
+
+        @@include("blocks/footer/footer.html")
+        @@include("blocks/popup/popup.html")
+    </body>
+</html>

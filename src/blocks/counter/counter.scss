@@ -1,0 +1,68 @@
+.counter {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: 72px;
+    input[type="number"]::-webkit-outer-spin-button, 
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+}
+.value {
+    width: 40px;
+    text-align: center;
+    padding: 1px 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    border: none;
+    background-color: $blackLight;
+    color: $white;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+.decrement {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: $blackLight;
+    border: none;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 14px;
+        height: 1px;
+        background-color: $blueLight;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.increment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: $blackLight;
+    cursor: pointer;
+    svg {
+        width: 15px;
+        height: 15px;
+        stroke: $blue;
+    }
+    &:focus {
+        outline: none;
+    }
+}

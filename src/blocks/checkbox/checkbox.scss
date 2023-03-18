@@ -1,0 +1,172 @@
+.checkbox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &__input {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        opacity: 0;
+        &:checked + label::before {
+            background-color: $blue;
+            border: 1px solid $blue;
+        }
+        &:checked + label::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            left: -20px;
+            top: 6px;
+            border-left: 1px solid $white;
+            border-bottom: 1px solid $white;
+            transform: rotate(-45deg);
+        }
+        &--small {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            opacity: 0;
+            &:checked + label::before {
+                background-color: $blue;
+                border: 1px solid $blue;
+            }
+            &:checked + label::after {
+                content: '';
+                position: absolute;
+                width: 12px;
+                height: 6px;
+                left: -17px;
+                top: 5px;
+                border-left: 1px solid $white;
+                border-bottom: 1px solid $white;
+                transform: rotate(-45deg);
+            }
+        }
+        &--calc {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            opacity: 0;
+            @include md {
+                width: 24px;
+                height: 24px;
+            }
+            &:checked + label::before {
+                background-color: $blue;
+                border: 1px solid $blue;
+            }
+            &:checked + label::after, &:hover + label::after {
+                content: '';
+                position: absolute;
+                width: 18px;
+                height: 9px;
+                left: -25px;
+                top: 8px;
+                border-left: 1px solid $white;
+                border-bottom: 1px solid $white;
+                @include md {
+                    width: 14px;
+                    height: 7px;
+                    left: -20px;
+                    top: 6px;
+                }
+            }
+        }
+    }
+    &__label {
+        position: absolute;
+        left: 24px;
+        width: calc(100% - 24px);
+        height: 24px;
+        z-index: 2;
+        cursor: pointer;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            border: 1px solid $grey;
+            border-radius: 2px;
+            left: -24px;
+        }
+        &--small {
+            position: absolute;
+            left: 20px;
+            width: calc(100% - 20px);
+            height: 20px;
+            z-index: 2;
+            cursor: pointer;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                border: 1px solid $grey;
+                border-radius: 2px;
+                left: -20px;
+            }
+        }
+        &--calc {
+            position: absolute;
+            left: 32px;
+            width: calc(100% - 32px);
+            height: 32px;
+            z-index: 2;
+            cursor: pointer;
+            @include md {
+                left: 24px;
+                width: calc(100% - 24px);
+                height: 24px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                transform: rotate(-45deg);
+                transition: 0.5s;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border: 1px solid $grey;
+                border-radius: 2px;
+                left: -32px;
+                transition: 0.5s;
+                @include md {
+                    width: 22px;
+                    height: 22px;
+                    left: -24px;
+                }
+            }
+        }
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        color: $grey;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        height: 24px;
+        z-index: 3;
+        a {
+            position: relative;
+            color: $grey;
+            text-decoration-line: none;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: $grey;
+                bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity UltraLight'), local('Gravity-UltraLight'),
+         url('../fonts/gravity/Gravityultralight.woff2') format('woff2'),
+         url('../fonts/gravity/Gravityultralight.woff') format('woff'),
+         url('../fonts/gravity/Gravityultralight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity UltraLight Italic'), local('Gravity-UltraLightItalic'),
+         url('../fonts/gravity/Gravityultralightitalic.woff2') format('woff2'),
+         url('../fonts/gravity/Gravityultralightitalic.woff') format('woff'),
+         url('../fonts/gravity/Gravityultralightitalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Light'), local('Gravity-Light'),
+         url('../fonts/gravity/Gravitylight.woff2') format('woff2'),
+         url('../fonts/gravity/Gravitylight.woff') format('woff'),
+         url('../fonts/gravity/Gravitylight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Light Italic'), local('Gravity-LightItalic'),
+         url('../fonts/gravity/Gravitylightitalic.woff2') format('woff2'),
+         url('../fonts/gravity/Gravitylightitalic.woff') format('woff'),
+         url('../fonts/gravity/Gravitylightitalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Book'), local('Gravity-Book'),
+         url('../fonts/gravity/Gravitybook.woff2') format('woff2'),
+         url('../fonts/gravity/Gravitybook.woff') format('woff'),
+         url('../fonts/gravity/Gravitybook.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Book Italic'), local('Gravity-BookItalic'),
+         url('../fonts/gravity/Gravitybookitalic.woff2') format('woff2'),
+         url('../fonts/gravity/Gravitybookitalic.woff') format('woff'),
+         url('../fonts/gravity/Gravitybookitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity'), local('Gravity-Regular'),
+         url('../fonts/gravity/Gravity.woff2') format('woff2'),
+         url('../fonts/gravity/Gravity.woff') format('woff'),
+         url('../fonts/gravity/Gravity.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Italic'), local('Gravity-Italic'),
+         url('../fonts/gravity/Gravityitalic.woff2') format('woff2'),
+         url('../fonts/gravity/Gravityitalic.woff') format('woff'),
+         url('../fonts/gravity/Gravityitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Bold'), local('Gravity-Bold'),
+         url('../fonts/gravity/Gravitybold.woff2') format('woff2'),
+         url('../fonts/gravity/Gravitybold.woff') format('woff'),
+         url('../fonts/gravity/Gravitybold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Bold Italic'), local('Gravity-BoldItalic'),
+         url('../fonts/gravity/Gravitybolditalic.woff2') format('woff2'),
+         url('../fonts/gravity/Gravitybolditalic.woff') format('woff'),
+         url('../fonts/gravity/Gravitybolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}

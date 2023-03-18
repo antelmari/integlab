@@ -1,0 +1,319 @@
+.projects {
+    &-wrapper {
+        padding: 96px 128px;
+        @include xl {
+            padding: 96px 58px;
+        }
+        @include lg {
+            padding: 80px 28px;
+        }
+        @include sm {
+            padding: 64px 0;
+        }
+        @include xs {
+            position: relative;
+            padding: 64px 20px 160px 20px;
+        }
+        @include xxs {
+            padding: 64px 10px 160px 10px;
+        }
+    }
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        color: $white;
+    }
+    &-cards {
+        margin-top: 64px;
+        display: grid;
+        grid-template-columns: 379px 379px 379px;
+        column-gap: 23.5px;
+        &--cases {
+            margin-top: -246px;
+            row-gap: 24px;
+            @include xl {
+                row-gap: 20px;
+            }
+            @include sm {
+                margin-top: -200px !important;
+            }
+            @include xs {
+                margin-top: -162px !important;
+            }
+        }
+        @include xxl {
+            grid-template-columns: 339px 339px 339px;
+        }
+        @include xl {
+            grid-template-columns: 328px 328px 328px;
+            column-gap: 20px;
+        }
+        @include lg {
+            grid-template-columns: 379px 379px;
+            grid-template-rows: 526px 526px;
+            column-gap: 50px;
+            row-gap: 24px;
+            padding: 0 48px;
+        }
+        @include md {
+            grid-template-columns: 328px 328px;
+            grid-template-rows: 427px 427px;
+            column-gap: 8px;
+            row-gap: 20px;
+            padding: 0;
+        }
+        @include sm {
+            width: 328px;
+            margin: 40px auto 0 auto;
+            grid-template-columns: 328px;
+            grid-template-rows: 427px 427px 427px;
+            column-gap: 0;
+        }
+        @include xs {
+            width: 335px;
+            grid-template-columns: 335px;
+            grid-template-rows: 452px 452px 452px;
+            row-gap: 16px;
+        }
+        &-container {
+            position: relative;
+        }
+        &__input {
+            position: absolute;
+            opacity: 0;
+            &:checked ~ .projects-cards__card {
+                .projects-cards__img {
+                    margin-top: 0;
+                    width: 379px;
+                    height: 324px;
+                    @include xxl {
+                        width: 339px;
+                        height: 260px;
+                    }
+                    @include xl {
+                        width: 328px;
+                    }
+                    @include lg {
+                        width: 379px;
+                        height: 324px;
+                    }
+                    @include md {
+                        width: 328px;
+                        height: 260px;
+                    }
+                    @include xs {
+                        width: 335px;
+                        height: 284px;
+                    }
+                }
+                .projects-cards__text {
+                    height: 202px;
+                    padding: 40px 24px 64px 24px;
+                    background-color: $blue;
+                    border-bottom-left-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    @include xxl {
+                        height: 167px;
+                        padding: 40px 20px;
+                    }
+                    @include lg {
+                        height: 202px;
+                        padding: 40px 24px 64px 24px;
+                    }
+                    @include md {
+                        height: 167px;
+                        padding: 40px 20px;
+                    }
+                    @include xs {
+                        height: 168px;
+                    }
+                }
+            }
+        }
+        &__label {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            &:hover ~ .projects-cards__card {
+                .projects-cards__img {
+                    margin-top: 0;
+                    width: 379px;
+                    height: 324px;
+                    @include xxl {
+                        width: 339px;
+                        height: 260px;
+                    }
+                    @include xl {
+                        width: 328px;
+                    }
+                    @include lg {
+                        width: 379px;
+                        height: 324px;
+                    }
+                    @include md {
+                        width: 328px;
+                        height: 260px;
+                    }
+                    @include xs {
+                        width: 335px;
+                        height: 284px;
+                    }
+                }
+                .projects-cards__text {
+                    height: 202px;
+                    padding: 40px 24px 64px 24px;
+                    background-color: $blue;
+                    border-bottom-left-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    @include xxl {
+                        height: 167px;
+                        padding: 40px 20px;
+                    }
+                    @include lg {
+                        height: 202px;
+                        padding: 40px 24px 64px 24px;
+                    }
+                    @include md {
+                        height: 167px;
+                        padding: 40px 20px;
+                    }
+                    @include xs {
+                        height: 168px;
+                    }
+                }
+            }
+        }
+        &__card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            height: 526px;
+            background-color: $blackLight;
+            border-radius: 2px;
+            @include xxl {
+                height: 427px;
+            }
+            @include lg {
+                height: 526px;
+            }
+            @include md {
+                height: 427px;
+            }
+            @include xs {
+                height: 452px;
+            }
+        }
+        &__img {
+            margin-top: 64px;
+            width: 355px;
+            height: 236px;
+            background-color: $whiteLight;
+            transition: 0.5s;
+            img {
+                width: 100%;
+            }
+            @include xxl {
+                margin-top: 40px;
+                width: 319px;
+                height: 212px;
+            }
+            @include xl {
+                width: 308px;
+            }
+            @include lg {
+                margin-top: 64px;
+                width: 355px;
+                height: 236px;
+            }
+            @include md {
+                margin-top: 40px;
+                width: 308px;
+                height: 212px;
+            }
+            @include xs {
+                width: 315px;
+                height: 244px;
+            }
+        }
+        &__text {
+            width: 100%;
+            height: 226px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 64px 24px;
+            transition: 0.5s;
+            @include xxl {
+                height: 175px;
+                padding: 40px 20px;
+            }
+            @include lg {
+                height: 226px;
+                padding: 64px 24px;
+            }
+            @include md {
+                height: 175px;
+                padding: 40px 20px;
+            }
+            @include xs {
+                height: 168px;
+            }
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: $white;
+            @include xl {
+                font-size: 22px;
+            }
+            @include lg {
+                font-size: 24px;
+            }
+            @include md {
+                font-size: 22px;
+            }
+            @include xs {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        &__subtitle {
+            min-height: 52px;
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $white;
+            @include xl {
+                font-size: 15px;
+                line-height: 24px;
+            }
+            @include lg {
+                font-size: 16px;
+                line-height: 26px;
+            }
+            @include md {
+                font-size: 15px;
+                line-height: 24px;
+            }
+            @include xs {
+                min-height: 44px;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+    &__btn {
+        @include xs {
+            position: absolute;
+            bottom: 64px;
+            right: 20px;
+        }
+    }
+}

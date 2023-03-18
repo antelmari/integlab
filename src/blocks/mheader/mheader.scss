@@ -1,0 +1,35 @@
+.mheader {
+    display: none;
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: $blackLight;
+    z-index: 10000;
+    @include sm {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px;
+    }
+    @include xs {
+        padding: 20px 30px;
+    }
+    &__btn {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        &--active {
+            svg {
+                stroke: $blue !important;
+            }
+        }
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: none;
+            stroke: $blueLight;
+            transition: 0.5s;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.header {
+    &-wrapper {
+        padding: 36px 128px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include xl {
+            padding: 36px 58px;
+        }
+        @include lg {
+            padding: 36px 28px;
+        }
+        @include sm {
+            padding: 26px 0;
+        }
+        @include xs {
+            padding: 26px 20px;
+        }
+        @include xxs {
+            padding: 26px 10px;
+        }
+    }
+    &__logo {
+        width: 138px;
+        height: 32px;
+        img {
+            width: 100%;
+        }
+        @include sm {
+            width: 122px;
+            height: 28px;
+        }
+    }
+    &-nav {
+        display: flex;
+        column-gap: 48px;
+        @include xl {
+            column-gap: 24px;
+        }
+        &--mini {
+            display: flex;
+            column-gap: 64px;
+            @include sm {
+                display: none;
+            }
+        }
+        &__link {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $white;
+            text-decoration-line: none;
+            transition: 0.5s;
+            &--active {
+                color: $blue;
+            }
+            &:hover {
+                color: $blue;
+            }
+        }
+        &__login {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            svg {
+                width: 24px;
+                height: 24px;
+                stroke: $blue;
+                fill: none;
+            }
+        }
+        &__icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            svg {
+                width: 24px;
+                height: 24px;
+                stroke: $blue;
+                fill: none;
+            }
+        }
+        @include lg {
+            display: none;
+        }
+    }
+    &-popup {
+        display: none;
+        @include lg {
+            display: block;
+        }
+    }
+    &-hamburger {
+        display: none;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        svg {
+            width: 26px;
+            height: 26px;
+            stroke: $white;
+        }
+        @include lg {
+            display: block;
+        }
+    }
+}

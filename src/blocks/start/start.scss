@@ -1,0 +1,136 @@
+.start {
+    &-wrapper {
+        padding: 96px 128px;
+        @include xl {
+            padding: 96px 58px;
+        }
+        @include lg {
+            padding: 80px 28px;
+        }
+        @include sm {
+            padding: 64px 0;
+        }
+        @include xs {
+            padding: 64px 20px;
+        }
+        @include xxs {
+            padding: 64px 10px;
+        }
+    }
+    &__title {
+        color: $white;
+    }
+    &__subtitle {
+        color: $white;
+        margin-top: 64px;
+        @include sm {
+            margin-top: 40px;
+        }
+    }
+    &-cards {
+        margin-top: 64px;
+        display: grid;
+        grid-template-columns: 379px 379px 379px;
+        grid-template-rows: 180px 180px 180px;
+        column-gap: 23.5px;
+        row-gap: 24px;
+        @include xxl {
+            grid-template-columns: 339px 339px 339px;
+        }
+        @include xl {
+            grid-template-columns: 328px 328px 328px;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+        @include lg {
+            grid-template-columns: 288px 288px 288px;
+            grid-template-rows: 130px 130px 130px;
+        }
+        @include md {
+            grid-template-columns: 322px 322px;
+            grid-template-rows: 130px 130px 130px 130px;
+        }
+        @include sm {
+            margin-top: 40px;
+            grid-template-columns: 260px 260px;
+        }
+        @include xs {
+            width: 335px;
+            margin: 40px auto 0 auto;
+            grid-template-columns: 335px;
+            grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+            row-gap: 16px;
+        }
+        &-container {
+            position: relative;
+        }
+        &__input {
+            position: absolute;
+            opacity: 0;
+            &:checked ~ .start-cards__card {
+                background-color: $blue;
+            }
+        }
+        &__label {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            &:hover ~ .start-cards__card {
+                background-color: $blue;
+            }
+        }
+        &__card {
+            border-radius: 2px;
+            background-color: $blackLight;
+            padding: 40px;
+            transition: 0.5s;
+            @include lg {
+                padding: 20px;
+            }
+            @include xs {
+                display: flex;
+                align-items: center;
+            }
+        }
+        &__img {
+            width: 48px;
+            height: 48px;
+            svg {
+                width: 48px;
+                height: 48px;
+                stroke: $white;
+                fill: none;
+            }
+            @include lg {
+                width: 40px;
+                height: 40px;
+                svg {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        &__title {
+            margin-top: 24px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: $white;
+            @include xxl {
+                font-size: 16px;
+            }
+            @include lg {
+                margin-top: 20px;
+            }
+            @include sm {
+                font-size: 14px;
+                line-height: 22px;
+            }
+            @include xs {
+                margin-top: 0;
+                margin-left: 20px;
+            }
+        }
+    }
+}

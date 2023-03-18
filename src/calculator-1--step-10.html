@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include("blocks/head/head.html", { "title": "Калькулятор 1" })
+
+    <body>
+        @@include("blocks/promo/promo.html")
+
+        <section class="calculator">
+            <div class="calculator-wrapper wrapper">
+                <h2 class="calculator__title title--main">Начнем проект?</h2>
+                <div class="calculator-subtitle--mobile">
+                    <h3 class="calculator-subtitle__text title--subtitle">Шаг</h3>
+                    <div class="calculator-subtitle__step title--subtitle">10/<span>13</span></div>
+                </div>
+                <div class="calculator-steps">
+                    <div class="calculator-steps-choice">
+                        <div class="calculator-steps-header">
+                            <h3 class="calculator-steps__subtitle title--subtitle">Выберите поставщиков</h3>
+                            <div class="calculator-steps__step title--subtitle">10/<span>13</span></div>
+                        </div>
+                        <div class="calculator-steps-options">
+                            <div class="calculator-steps__option">
+                                <div class="checkbox">
+                                    <input id="calculator-option--1" type="checkbox" class="checkbox__input--calc">
+                                    <label for="calculator-option--1" class="checkbox__label--calc"></label>
+                                    <div class="calculator-steps__text calculator-steps__text--checkbox">NetLab</div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps__option">
+                                <div class="checkbox">
+                                    <input id="calculator-option--2" type="checkbox" class="checkbox__input--calc">
+                                    <label for="calculator-option--2" class="checkbox__label--calc"></label>
+                                    <div class="calculator-steps__text calculator-steps__text--checkbox">OCS</div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps__option">
+                                <div class="checkbox">
+                                    <input id="calculator-option--3" type="checkbox" class="checkbox__input--calc">
+                                    <label for="calculator-option--3" class="checkbox__label--calc"></label>
+                                    <div class="calculator-steps__text calculator-steps__text--checkbox">Marvel</div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps__option">
+                                <div class="checkbox">
+                                    <input id="calculator-option--4" type="checkbox" class="checkbox__input--calc">
+                                    <label for="calculator-option--4" class="checkbox__label--calc"></label>
+                                    <div class="calculator-steps__text calculator-steps__text--checkbox">Cactus</div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps__option">
+                                <div class="checkbox">
+                                    <input id="calculator-option--5" type="checkbox" class="checkbox__input--calc">
+                                    <label for="calculator-option--5" class="checkbox__label--calc"></label>
+                                    <div class="calculator-steps__text calculator-steps__text--checkbox">Мерлеон</div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-container">
+                                <input id="calculator-option--6" type="radio" class="calculator-steps__input" name="input--calculator">
+                                <label for="calculator-option--6" class="calculator-steps__label"></label>
+                                <div class="calculator-steps__option">
+                                    <div class="calculator-steps__text">Другое</div>
+                                    <div class="calculator-steps__arrow">
+                                        <svg><use xlink:href="imgs/sprite.svg#arrow-right"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="calculator__btn btn--back">
+                            <div class="btn--back__arrow">
+                                <svg><use xlink:href="imgs/sprite.svg#back"></use></svg>
+                            </div>
+                            Назад
+                        </button>
+                    </div>
+                    <div class="calculator-steps-result">
+                        <h3 class="calculator-steps__subtitle title--subtitle">Ваш проект</h3>
+                        <div class="calculator-steps-project">
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Выберите тип проекта</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        Интернет-магазин
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Выберите платформу</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        1C - Битрикс
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Подключение к 1С</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        1С Управление торговлей
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Вариант интеграции</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        Экспорт заказов в 1С
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Режим работы обмена с 1С</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        В реальном времени
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Интеграция CRM Битрикс 24</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        Экспорт заказов (базовый)
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Платежные системы</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        Яндекс касса
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="calculator-steps-project__type">
+                                        Сбербанк
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Служба доставки</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        Boxberry
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="calculator-steps-project__type">
+                                        СДЭК
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="calculator-steps-project__type">
+                                        Pickpoint
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title">Интеграция с поставщиками</div>
+                                <div class="calculator-steps-project__choice">
+                                    <div class="calculator-steps-project__type">
+                                        Да
+                                        <div class="calculator-steps-project__close">
+                                            <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator-steps-project__item">
+                                <div class="calculator-steps-project__title calculator-steps-project__title--active">Выберите поставщиков</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-steps-options--mobile">
+                    <div class="calculator-steps__option">
+                        <div class="checkbox">
+                            <input id="calculator-option--7" type="checkbox" class="checkbox__input--calc">
+                            <label for="calculator-option--7" class="checkbox__label--calc"></label>
+                            <div class="calculator-steps__text calculator-steps__text--checkbox">NetLab</div>
+                        </div>
+                    </div>
+                    <div class="calculator-steps__option">
+                        <div class="checkbox">
+                            <input id="calculator-option--8" type="checkbox" class="checkbox__input--calc">
+                            <label for="calculator-option--8" class="checkbox__label--calc"></label>
+                            <div class="calculator-steps__text calculator-steps__text--checkbox">OCS</div>
+                        </div>
+                    </div>
+                    <div class="calculator-steps__option">
+                        <div class="checkbox">
+                            <input id="calculator-option--9" type="checkbox" class="checkbox__input--calc">
+                            <label for="calculator-option--9" class="checkbox__label--calc"></label>
+                            <div class="calculator-steps__text calculator-steps__text--checkbox">Marvel</div>
+                        </div>
+                    </div>
+                    <div class="calculator-steps__option">
+                        <div class="checkbox">
+                            <input id="calculator-option--10" type="checkbox" class="checkbox__input--calc">
+                            <label for="calculator-option--10" class="checkbox__label--calc"></label>
+                            <div class="calculator-steps__text calculator-steps__text--checkbox">Cactus</div>
+                        </div>
+                    </div>
+                    <div class="calculator-steps__option">
+                        <div class="checkbox">
+                            <input id="calculator-option--11" type="checkbox" class="checkbox__input--calc">
+                            <label for="calculator-option--11" class="checkbox__label--calc"></label>
+                            <div class="calculator-steps__text calculator-steps__text--checkbox">Мерлеон</div>
+                        </div>
+                    </div>
+                    <div class="calculator-steps-container">
+                        <input id="calculator-option--12" type="radio" class="calculator-steps__input" name="input--calculator">
+                        <label for="calculator-option--12" class="calculator-steps__label"></label>
+                        <div class="calculator-steps__option">
+                            <div class="calculator-steps__text">Другое</div>
+                            <div class="calculator-steps__arrow">
+                                <svg><use xlink:href="imgs/sprite.svg#arrow-right"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="calculator__btn btn--back">
+                        <div class="btn--back__arrow">
+                            <svg><use xlink:href="imgs/sprite.svg#back"></use></svg>
+                        </div>
+                        Назад
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        @@include("blocks/technology/technology.html")
+        @@include("blocks/projects/projects.html", { "title": "Недавние проекты" })
+
+        @@include("blocks/footer/footer.html")
+        @@include("blocks/popup/popup.html")
+    </body>
+</html>

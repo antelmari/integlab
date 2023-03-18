@@ -1,0 +1,360 @@
+.details {
+    height: 100vh;
+    min-height: 840px;
+    background: url(../imgs/background/bg.svg) center (center/cover) no-repeat;
+    @include xl {
+        min-height: 650px;
+    }
+    @include lg {
+        min-height: 600px;
+    }
+    @include md {
+        min-height: 550px;
+    }
+    @include sm {
+        min-height: 432px;
+        height: 432px;
+        margin-bottom: 254px;
+    }
+    &-wrapper {
+        padding: 0 128px;
+        @include xl {
+            padding: 0 58px;
+        }
+        @include lg {
+            padding: 0 28px;
+        }
+        @include sm {
+            padding: 0;
+        }
+        @include xs {
+            padding: 0 20px;
+        }
+        @include xxs {
+            padding: 0 10px;
+        }
+    }
+    &-text {
+        margin-top: 152px;
+        width: 580px;
+        @include xxl {
+            margin-top: 130px;
+        }
+        @include xl {
+            width: 500px;
+        }
+        @include lg {
+            width: 440px;
+        }
+        @include md {
+            margin-top: 100px;
+            width: 330px;
+        }
+        @include sm {
+            margin-top: 112px;
+            padding-bottom: 64px;
+            width: 100%;
+        }
+    }
+    &__title {
+        color: $white;
+    }
+    &__descr {
+        margin-top: 64px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: $white;
+        @include xl {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        @include lg {
+            font-size: 20px;
+        }
+        @include md {
+            margin-top: 40px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    &-img {
+        width: 668px;
+        position: absolute;
+        top: 240px;
+        right: 0;
+        @include xxl {
+            width: 600px;
+        }
+        @include xl {
+            width: 550px;
+        }
+        @include lg {
+            width: 480px;
+        }
+        @include md {
+            width: 380px;
+            top: 210px;
+        }
+        @include sm {
+            position: relative;
+            top: 72px;
+            display: flex;
+            margin-left: auto;
+        }
+        @include xs {
+            width: 335px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &__link {
+        margin-top: 64px;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: $blue;
+        text-decoration-line: none;
+        @include lg {
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @include xs {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    &__arrow {
+        margin-left: 12px;
+        width: 18px;
+        height: 18px;
+        @include xs {
+            margin-left: 10px;
+            width: 13.5px;
+            height: 13.5px;
+        }
+        svg {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            stroke: $blue;
+            @include xs {
+                width: 13.5px;
+                height: 13.5px;
+            }
+        }
+    }
+}
+
+.functions {
+    &-wrapper {
+        padding: 96px 128px;
+        @include xl {
+            padding: 96px 58px;
+        }
+        @include lg {
+            padding: 64px 28px;
+        }
+        @include sm {
+            padding: 64px 0;
+        }
+        @include xs {
+            padding: 64px 20px;
+        }
+        @include xxs {
+            padding: 64px 10px;
+        }
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        @include md {
+            display: block;
+        }
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: $white;
+        @include md {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        @include sm {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    &__list {
+        display: grid;
+        row-gap: 32px;
+        @include lg {
+            row-gap: 24px;
+        }
+        @include md {
+            row-gap: 16px;
+            margin-top: 24px;
+            margin-left: 16px;
+        }
+        @include sm {
+            margin-top: 40px;
+            margin-left: 24px;
+        }
+        li {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            color: $white;
+            @include md {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+    &-photos {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 152px 0;
+        row-gap: 64px;
+        @include lg {
+            margin: 80px 0;
+            row-gap: 40px;
+        }
+        @include md {
+            row-gap: 24px;
+        }
+        @include sm {
+            margin: 96px auto 156px auto;
+            width: min-content;
+            row-gap: 156px;
+        }
+        &--without-bottom {
+            margin: 152px 0 0 0;
+            @include lg {
+                margin: 80px 0 0 0;
+            }
+            @include sm {
+                margin: 96px auto 60px auto;
+            }
+        }
+        &__item {
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: $greyBackground;
+            @include xxl {
+                height: 450px;
+            }
+            @include xl {
+                height: 425px;
+            }
+            @include lg {
+                height: 375px;
+            }
+            @include md {
+                height: 275px;
+            }
+            &--img {
+                .tasks-photos__text {
+                    display: none;
+                }
+                .tasks-photos__img {
+                    display: block;
+                }
+            }
+        }
+        &-desktop {
+            width: 840px;
+            @include xxl {
+                width: 756px;
+            }
+            @include xl {
+                width: 714px;
+            }
+            @include lg {
+                width: 630px;
+            }
+            @include md {
+                width: 462px;
+            }
+            @include sm {
+                width: 315px;
+                height: 200px;
+            }
+        }
+        &-mobile {
+            width: 320px;
+            @include xxl {
+                width: 288px;
+            }
+            @include xl {
+                width: 272px;
+            }
+            @include lg {
+                width: 240px;
+            }
+            @include md {
+                width: 176px;
+            }
+            @include sm {
+                position: absolute;
+                width: 137px;
+                height: 220px;
+                background-color: $greyBackgroundLight;
+                &--top {
+                    top: 40px;
+                }
+                &--bottom {
+                    bottom: -60px;
+                }
+                &--right {
+                    right: -20px;
+                }
+                &--left {
+                    left: -20px;
+                }
+            }
+        }
+        &__text {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: $black;
+            @include md {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        &__img {
+            display: none;
+        }
+    }
+    &__message {
+        margin: 0 0 0 auto;
+        width: 520px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: $white;
+        @include md {
+            width: 480px;
+            font-size: 22px;
+            line-height: 30px;
+        }
+        @include sm {
+            margin: 0 auto;
+            width: 335px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+}

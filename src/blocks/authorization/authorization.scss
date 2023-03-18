@@ -1,0 +1,101 @@
+.authorization {
+    height: 100vh;
+    min-height: 550px;
+    background: url(../imgs/background/bg.svg) center (center/cover) no-repeat;
+    &-form {
+        position: relative;
+        padding: 96px 40px;
+        background-color: $blackLight;
+        width: 503px;
+        border-radius: 8px;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        @include xs {
+            width: 335px;
+            padding: 40px 20px;
+            border-radius: 2px;
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 35px;
+        right: 40px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        svg {
+            width: 24px;
+            height: 24px;
+            stroke: $white;
+            stroke-width: 1.5px;
+        }
+        @include xs {
+            top: 22px;
+            right: 20px;
+            width: 30px;
+            height: 30px;
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: $white;
+        @include xs {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    &__input {
+        width: 100%;
+        margin: 40px 0;
+        height: 64px;
+        border-radius: 4px;
+        border: 1px solid $grey;
+        background-color: $blackLight;
+        padding: 0 24px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 38px;
+        &:focus {
+            outline: none;
+            color: $white;
+        }
+        &::placeholder {
+            color: $grey;
+        }
+        @include xs {
+            height: 56px;
+            border-radius: 2px;
+            padding: 0 20px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    &__button {
+        margin-top: 64px;
+        @include xs {
+            margin-top: 40px;
+        }
+    }
+    @include xs {
+        .checkbox {
+            justify-content: left;
+            &__label {
+                height: 44px;
+            }
+            &__text {
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: 12px;
+                line-height: 20px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

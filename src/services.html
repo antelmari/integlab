@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include("blocks/head/head.html", { "title": "Услуги" })
+
+    <body>
+        <section class="services">
+            <header class="header">
+                <div class="header-wrapper wrapper">
+                    <div class="header__logo">
+                        <a href=""><img src="imgs/header/logo.svg" alt="logo"></a>
+                    </div>
+                    <nav class="header-nav">
+                        <a href="" class="header-nav__link">Проекты</a>
+                        <a href="" class="header-nav__link header-nav__link--active">Услуги</a>
+                        <a href="" class="header-nav__link">О нас</a>
+                        <a href="" class="header-nav__link">1С-Битрикс</a>
+                        <a href="" class="header-nav__link">Битрикс 24</a>
+                        <a href="" class="header-nav__link">Маркетплейс</a>
+                        <a href="" class="header-nav__link">
+                            <div class="header-nav__login">
+                                <svg><use xlink:href="imgs/sprite.svg#login"></use></svg>
+                            </div>
+                            Войти
+                        </a>
+                    </nav>
+                    <a href="#popup-menu" class="popup header-popup">
+                        <div class="header-hamburger">
+                            <svg><use xlink:href="imgs/sprite.svg#hamburger"></use></svg>
+                        </div>
+                    </a>
+                </div>
+            </header>
+
+            <div class="services-wrapper wrapper">
+                <h1 class="services__title title">Услуги</h1>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="cards-block">
+                <div class="cards-left">
+                    <div class="cards-left__card cards__card">
+                        <h3 class="cards__title title--subtitle">Техническая поддержка</h3>
+                        <div class="cards__descr">Обеспечиваем бесперебойную работу сайта 24/7</div>
+                        <ul class="cards__list">
+                            <li>Техническая поддержка</li>
+                            <li>Информационная поддержка (контент, консультация)</li>
+                        </ul>
+                        <button class="cards__btn btn--border">Подробнее</button>
+                    </div>
+                    <div class="cards-left__card cards__card">
+                        <h3 class="cards__title title--subtitle">Сайты, веб - сервисы</h3>
+                        <div class="cards__descr">Разрабатываем сложные высоконагруженные проекты</div>
+                        <ul class="cards__list">
+                            <li>Интернет - магазин</li>
+                            <li>Корпоративные сайты</li>
+                            <li>Промо страницы</li>
+                            <li>Сервисы мониторинга</li>
+                        </ul>
+                        <button class="cards__btn btn--border">Подробнее</button>
+                    </div>
+                </div>
+                <div class="cards-right">
+                    <div class="cards-right__card cards__card">
+                        <h3 class="cards__title title--subtitle">SEO - продвижение</h3>
+                        <div class="cards__descr">Увеличение органического трафика на сайте</div>
+                        <ul class="cards__list">
+                            <li>Базовое SEO на этапах разработки проекта</li>
+                            <li>Внешняя и внутренняя оптимизация проекта</li>
+                            <li>Работа с нуля и поддержка существующих проектов</li>
+                        </ul>
+                        <button class="cards__btn btn--border">Подробнее</button>
+                    </div>
+                    <div class="cards-right__card cards__card">
+                        <h3 class="cards__title title--subtitle">CRM и автоматизация</h3>
+                        <div class="cards__descr">Автоматизируем рутинные операции</div>
+                        <ul class="cards__list">
+                            <li>Установка и настройка CRM Битрикс 24</li>
+                            <li>Комплексная автоматизация</li>
+                            <li>Бизнес процессы</li>
+                        </ul>
+                        <button class="cards__btn btn--border">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include("blocks/projects/projects.html", { "title": "Недавние проекты" })
+        @@include("blocks/start/start.html")
+
+        @@include("blocks/footer/footer.html")
+        @@include("blocks/popup/popup.html")
+    </body>
+</html>

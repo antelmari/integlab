@@ -1,0 +1,66 @@
+.cases {
+    height: 100vh;
+    min-height: 840px;
+    background: url(../imgs/background/bg.svg) center (center/cover) no-repeat;
+    @include xl {
+        min-height: 700px;
+    }
+    @include lg {
+        min-height: 650px;
+    }
+    @include sm {
+        min-height: 550px;
+    }
+    @include xs {
+        min-height: 432px;
+    }
+    &-wrapper {
+        padding: 0 128px;
+        @include xl {
+            padding: 0 58px;
+        }
+        @include lg {
+            padding: 0 28px;
+        }
+        @include sm {
+            padding: 0;
+        }
+        @include xs {
+            padding: 0 20px;
+        }
+        @include xxs {
+            padding: 0 10px;
+        }
+    }
+    &__title {
+        margin-top: 152px;
+        color: $white;
+        @include lg {
+            margin-top: 100px;
+        }
+        @include sm {
+            margin-top: 72px;
+        }
+    }
+}
+
+.sites {
+    &-wrapper {
+        padding: 0 128px 96px 128px;
+        @include xl {
+            padding: 0 58px 96px 58px;
+        }
+        @include lg {
+            padding: 0 28px 64px 28px;
+        }
+        @include sm {
+            padding: 0 0 104px 0;
+        }
+        @include xs {
+            padding: 0 20px 104px 20px;
+        }
+        @include xxs {
+            padding: 0 10px 104px 10px;
+        }
+    }
+}

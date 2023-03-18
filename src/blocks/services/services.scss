@@ -1,0 +1,223 @@
+.services {
+    height: 100vh;
+    min-height: 840px;
+    background: url(../imgs/background/bg.svg) center (center/cover) no-repeat;
+    @include xl {
+        min-height: 700px;
+    }
+    @include lg {
+        min-height: 650px;
+    }
+    @include sm {
+        min-height: 550px;
+    }
+    @include xs {
+        min-height: 440px;
+    }
+    &-wrapper {
+        padding: 0 128px;
+        @include xl {
+            padding: 0 58px;
+        }
+        @include lg {
+            padding: 0 28px;
+        }
+        @include sm {
+            padding: 0;
+        }
+        @include xs {
+            padding: 0 20px;
+        }
+        @include xxs {
+            padding: 0 10px;
+        }
+    }
+    &__title {
+        margin-top: 152px;
+        color: $white;
+        @include lg {
+            margin-top: 100px;
+        }
+        @include sm {
+            margin-top: 72px;
+        }
+    }
+}
+
+.cards {
+    height: 890px;
+    padding-bottom: 96px;
+    @include xl {
+        height: 918px;
+    }
+    @include lg {
+        height: 642px;
+    }
+    @include md {
+        height: 1934px;
+    }
+    @include sm {
+        height: 1635px;
+    }
+    @include xs {
+        height: 1663px;
+    }
+    @include xs {
+        padding-bottom: 104px;
+    }
+    &-block {
+        position: relative;
+        top: -246px;
+        width: min-content;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 580px 580px;
+        column-gap: 24px;
+        @include xl {
+            grid-template-columns: 500px 500px;
+        }
+        @include lg {
+            grid-template-columns: 440px 440px;
+        }
+        @include md {
+            display: block;
+        }
+        @include sm {
+            top: -200px;
+        }
+        @include xs {
+            top: -171px;
+        }
+    }
+    &-left {
+        display: grid;
+        row-gap: 24px;
+        @include sm {
+            row-gap: 16px;
+        }
+        &__card {
+            padding: 64px 40px;
+            @include xl {
+                padding: 64px 30px;
+            }
+            @include lg {
+                padding: 40px 20px;
+            }
+            @include md {
+                padding: 64px 40px;
+            }
+            @include sm {
+                padding: 40px 20px;
+            }
+        }
+    }
+    &-right {
+        display: grid;
+        row-gap: 24px;
+        @include md {
+            margin-top: 24px;
+        }
+        @include sm {
+            row-gap: 16px;
+            margin-top: 16px;
+        }
+        &__card {
+            padding: 64px 40px 78px 40px;
+            @include xl {
+                padding: 64px 30px 78px 30px;
+            }
+            @include lg {
+                padding: 40px 20px;
+            }
+            @include md {
+                padding: 64px 40px;
+            }
+            @include sm {
+                padding: 40px 20px;
+            }
+        }
+    }
+    &__card {
+        background-color: $blackLight;
+        border-radius: 4px;
+        @include md {
+            width: 580px;
+        }
+        @include sm {
+            width: 335px;
+        }
+    }
+    &__title {
+        color: $white;
+    }
+    &__descr {
+        margin-top: 16px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        color: $grey;
+        @include lg {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        @include md {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        @include sm {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    &__list {
+        margin-top: 40px;
+        display: grid;
+        row-gap: 24px;
+        padding-left: 30px;
+        @include lg {
+            row-gap: 16px;
+            padding-left: 24px;
+        }
+        @include md {
+            row-gap: 24px;
+            padding-left: 30px;
+        }
+        @include sm {
+            row-gap: 16px;
+            padding-left: 24px;
+        }
+        li {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            color: $white;
+            @include lg {
+                font-size: 14px;
+                line-height: 22px;
+            }
+            @include md {
+                font-size: 18px;
+                line-height: 28px;
+            }
+            @include sm {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+    &__btn {
+        margin-top: 64px;
+        @include lg {
+            margin-top: 40px;
+        }
+        @include md {
+            margin-top: 64px;
+        }
+        @include sm {
+            margin-top: 40px;
+        }
+    }
+}

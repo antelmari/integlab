@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include("blocks/head/head.html", { "title": "Проекты" })
+
+    <body>
+        <section class="details">
+            <header class="header">
+                <div class="header-wrapper wrapper">
+                    <div class="header__logo">
+                        <a href=""><img src="imgs/header/logo.svg" alt="logo"></a>
+                    </div>
+                    <nav class="header-nav">
+                        <a href="" class="header-nav__link header-nav__link--active">Проекты</a>
+                        <a href="" class="header-nav__link">Услуги</a>
+                        <a href="" class="header-nav__link">О нас</a>
+                        <a href="" class="header-nav__link">1С-Битрикс</a>
+                        <a href="" class="header-nav__link">Битрикс 24</a>
+                        <a href="" class="header-nav__link">Маркетплейс</a>
+                        <a href="" class="header-nav__link">
+                            <div class="header-nav__login">
+                                <svg><use xlink:href="imgs/sprite.svg#login"></use></svg>
+                            </div>
+                            Войти
+                        </a>
+                    </nav>
+                    <a href="#popup-menu" class="popup header-popup">
+                        <div class="header-hamburger">
+                            <svg><use xlink:href="imgs/sprite.svg#hamburger"></use></svg>
+                        </div>
+                    </a>
+                </div>
+            </header>
+
+            <div class="details-img">
+                <img src="imgs/details/project.jpg" alt="project">
+            </div>
+            <div class="details-wrapper wrapper">
+                <div class="details-text">
+                    <h1 class="details__title title">PocketBook</h1>
+                    <div class="details__descr">Наша команда прорабатывает все точки касания при взаимодействии пользователя и сервиса.</div>
+                    <a href="https://pocketbook.ru" class="details__link" target="_blank">
+                        pocketbook.ru
+                        <div class="details__arrow">
+                            <svg><use xlink:href="imgs/sprite.svg#arrow-link"></use></svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="functions">
+            <div class="functions-wrapper wrapper">
+                <div class="functions-list">
+                    <h3 class="functions__title">Задачи:</h3>
+                    <ul class="functions__list">
+                        <li>Поддерживать проекты на CMS «1С-Битрикс»;</li>
+                        <li>Поддерживать уже реализованный функционал и разрабатывать новый;</li>
+                        <li>Реализовывать интеграции между различными сервисами;</li>
+                        <li>Работа с API;</li>
+                    </ul>
+                </div>
+                <div class="functions-photos">
+                    <div class="functions-photos-desktop functions-photos__item">
+                        <div class="functions-photos__text">Десктоп</div>
+                        <img class="functions-photos__img" src="" alt="photo">
+                    </div>
+                    <div class="functions-photos-mobile functions-photos-mobile--top functions-photos-mobile--right functions-photos__item">
+                        <div class="functions-photos__text">Мобильная</div>
+                        <img class="functions-photos__img" src="" alt="photo">
+                    </div>
+                </div>
+                <div class="functions-list">
+                    <h3 class="functions__title">Решения:</h3>
+                    <ul class="functions__list">
+                        <li>Поддерживать проекты на CMS «1С-Битрикс»;</li>
+                        <li>Поддерживать уже реализованный функционал и разрабатывать новый;</li>
+                        <li>Реализовывать интеграции между различными сервисами;</li>
+                        <li>Работа с API;</li>
+                    </ul>
+                </div>
+                <div class="functions-photos">
+                    <div class="functions-photos-mobile functions-photos-mobile--top functions-photos-mobile--left functions-photos__item">
+                        <div class="functions-photos__text">Мобильная</div>
+                        <img class="functions-photos__img" src="" alt="photo">
+                    </div>
+                    <div class="functions-photos-desktop functions-photos__item">
+                        <div class="functions-photos__text">Десктоп</div>
+                        <img class="functions-photos__img" src="" alt="photo">
+                    </div>
+                    <div class="functions-photos-desktop functions-photos__item">
+                        <div class="functions-photos__text">Десктоп</div>
+                        <img class="functions-photos__img" src="" alt="photo">
+                    </div>
+                    <div class="functions-photos-mobile functions-photos-mobile--bottom functions-photos-mobile--right functions-photos__item">
+                        <div class="functions-photos__text">Мобильная</div>
+                        <img class="functions-photos__img" src="" alt="photo">
+                    </div>
+                </div>
+                <div class="functions__message">Наша команда прорабатывает все точки касания при взаимодействии пользователя и сервиса.</div>
+                <div class="functions-photos functions-photos--without-bottom">
+                    <div class="functions-photos-mobile functions-photos-mobile--top functions-photos-mobile--left functions-photos__item">
+                        <div class="functions-photos__text">Мобильная</div>
+                        <img class="functions-photos__img" src="" alt="photo">
+                    </div>
+                    <div class="functions-photos-desktop functions-photos__item">
+                        <div class="functions-photos__text">Десктоп</div>
+                        <img class="functions-photos__img" src="" alt="photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include("blocks/projects/projects.html", { "title": "Другие проекты" })
+
+        @@include("blocks/footer/footer.html")
+        @@include("blocks/popup/popup.html")
+    </body>
+</html>

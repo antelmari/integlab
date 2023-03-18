@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include("blocks/head/head.html", { "title": "Лицензии" })
+
+    <body>
+        <section class="license">
+            <header class="header">
+                <div class="header-wrapper wrapper">
+                    <div class="header__logo">
+                        <a href=""><img src="imgs/header/logo.svg" alt="logo"></a>
+                    </div>
+                    <nav class="header-nav">
+                        <a href="" class="header-nav__link">Проекты</a>
+                        <a href="" class="header-nav__link">Услуги</a>
+                        <a href="" class="header-nav__link">О нас</a>
+                        <a href="" class="header-nav__link header-nav__link--active">1С-Битрикс</a>
+                        <a href="" class="header-nav__link">Битрикс 24</a>
+                        <a href="" class="header-nav__link">Маркетплейс</a>
+                        <a href="" class="header-nav__link">
+                            <div class="header-nav__login">
+                                <svg><use xlink:href="imgs/sprite.svg#login"></use></svg>
+                            </div>
+                            Войти
+                        </a>
+                    </nav>
+                    <a href="#popup-menu" class="popup header-popup">
+                        <div class="header-hamburger">
+                            <svg><use xlink:href="imgs/sprite.svg#hamburger"></use></svg>
+                        </div>
+                    </a>
+                </div>
+            </header>
+
+            <div class="license-wrapper wrapper">
+                <h1 class="license__title title">Сравнение лицензий</h1>
+                <h2 class="license__descr">Начните с любой редакции и развивайте проект по мере роста. Платформа позволяет управлять сайтами и интернет-магазинами любого масштаба.</h2>
+            </div>
+        </section>
+
+        <section class="tariffs">
+            <div class="tariffs-wrapper wrapper">
+                <div class="tariffs-checkbox">
+                    <input id="check" class="tariffs-checkbox__input" type="checkbox">
+                    <label for="check" class="tariffs-checkbox__label"></label>
+                    <div class="tariffs-checkbox__text">Показать различия</div>
+                </div>
+                <div class="tariffs-cards">
+                    <div class="tariffs-cards__item">
+                        <div class="tariffs-cards__title">Старт</div>
+                        <div class="tariffs-cards__price">
+                            <div class="tariffs-cards__price--single">5 580 ₽</div>
+                        </div>
+                        <a href="#popup-order" class="popup">
+                            <button class="tariffs-cards__btn btn--buy">Купить</button>
+                        </a>
+                        <a href="" class="tariffs-cards__link">Подробнее о редакции</a>
+                    </div>
+                    <div class="tariffs-cards__item">
+                        <div class="tariffs-cards__title">Стандарт</div>
+                        <div class="tariffs-cards__price">
+                            <div class="tariffs-cards__price--single">16 110 ₽</div>
+                        </div>
+                        <a href="#popup-order" class="popup">
+                            <button class="tariffs-cards__btn btn--buy">Купить</button>
+                        </a>
+                        <a href="" class="tariffs-cards__link">Подробнее о редакции</a>
+                    </div>
+                    <div class="tariffs-cards__item">
+                        <div class="tariffs-cards__title">Малый бизнес</div>
+                        <div class="tariffs-cards__price">
+                            <div class="tariffs-cards__price--new">34 765 ₽</div>
+                            <div class="tariffs-cards__price--old">40 900 ₽</div>
+                        </div>
+                        <a href="#popup-order" class="popup">
+                            <button class="tariffs-cards__btn btn--buy">Купить</button>
+                        </a>
+                        <a href="" class="tariffs-cards__link">Подробнее о редакции</a>
+                    </div>
+                    <div class="tariffs-cards__item">
+                        <div class="tariffs-cards__title">Бизнес</div>
+                        <div class="tariffs-cards__price">
+                            <div class="tariffs-cards__price--new">71 315 ₽</div>
+                            <div class="tariffs-cards__price--old">83 900 ₽</div>
+                        </div>
+                        <a href="#popup-order" class="popup">
+                            <button class="tariffs-cards__btn btn--buy">Купить</button>
+                        </a>
+                        <a href="" class="tariffs-cards__link">Подробнее о редакции</a>
+                    </div>
+                    <div class="tariffs-cards__item">
+                        <div class="tariffs-cards__title">Энтерпрайз</div>
+                        <div class="tariffs-cards__price">
+                            <div class="tariffs-cards__price--single">1 699 000 ₽</div>
+                        </div>
+                        <button class="tariffs-cards__btn btn--request">Оставить заявку</button>
+                        <a href="" class="tariffs-cards__link">Подробнее о редакции</a>
+                    </div>
+                </div>
+                <div class="tariffs-comparison">
+                    <div class="tariffs-comparison-categories">
+                        <div class="tariffs-comparison-categories__item">
+                            <div class="tariffs-comparison-categories__header">
+                                <div class="tariffs-comparison-categories__title">CMS</div>
+                                <div class="tariffs-comparison-categories__arrow">
+                                    <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                </div>
+                            </div>
+                            <div class="tariffs-comparison-categories-list">
+                                <div class="tariffs-comparison-categories-list__item">
+                                    <div class="tariffs-comparison-categories-list__title">Главный модуль</div>
+                                    <div class="tariffs-comparison-categories-list-options">
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tariffs-comparison-categories-list__item">
+                                    <div class="tariffs-comparison-categories-list__title">Сайты24</div>
+                                    <div class="tariffs-comparison-categories-list-options">
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tariffs-comparison-categories-list__item">
+                                    <div class="tariffs-comparison-categories-list__title">Число страниц</div>
+                                    <div class="tariffs-comparison-categories-list-options">
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__number">2</div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tariffs-comparison-categories-list__item">
+                                    <div class="tariffs-comparison-categories-list__title">Управление структурой</div>
+                                    <div class="tariffs-comparison-categories-list-options">
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tariffs-comparison-categories-list__item">
+                                    <div class="tariffs-comparison-categories-list__title">Информационные блоки</div>
+                                    <div class="tariffs-comparison-categories-list-options">
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tariffs-comparison-categories-list__item">
+                                    <div class="tariffs-comparison-categories-list__title">Highload-блоки</div>
+                                    <div class="tariffs-comparison-categories-list-options">
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tariffs-comparison-categories-list__item">
+                                    <div class="tariffs-comparison-categories-list__title">Поиск</div>
+                                    <div class="tariffs-comparison-categories-list-options">
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tariffs-comparison-categories-list__item">
+                                    <div class="tariffs-comparison-categories-list__title">Перевод</div>
+                                    <div class="tariffs-comparison-categories-list-options">
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tariffs-comparison-categories-list__item">
+                                    <div class="tariffs-comparison-categories-list__title">Форумы и блоки</div>
+                                    <div class="tariffs-comparison-categories-list-options">
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__minus"></div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list__option">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tariffs-comparison-categories__item">
+                            <div class="tariffs-comparison-categories__header">
+                                <div class="tariffs-comparison-categories__title">Интернет-магазин</div>
+                                <div class="tariffs-comparison-categories__arrow">
+                                    <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                </div>
+                            </div>
+                            <div class="tariffs-comparison-categories-list"></div>
+                        </div>
+                        <div class="tariffs-comparison-categories__item">
+                            <div class="tariffs-comparison-categories__header">
+                                <div class="tariffs-comparison-categories__title">Маркетинг</div>
+                                <div class="tariffs-comparison-categories__arrow">
+                                    <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                </div>
+                            </div>
+                            <div class="tariffs-comparison-categories-list"></div>
+                        </div>
+                        <div class="tariffs-comparison-categories__item">
+                            <div class="tariffs-comparison-categories__header">
+                                <div class="tariffs-comparison-categories__title">Производительность</div>
+                                <div class="tariffs-comparison-categories__arrow">
+                                    <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                </div>
+                            </div>
+                            <div class="tariffs-comparison-categories-list"></div>
+                        </div>
+                        <div class="tariffs-comparison-categories__item">
+                            <div class="tariffs-comparison-categories__header">
+                                <div class="tariffs-comparison-categories__title">Безопасность и мобильность</div>
+                                <div class="tariffs-comparison-categories__arrow">
+                                    <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                </div>
+                            </div>
+                            <div class="tariffs-comparison-categories-list"></div>
+                        </div>
+                    </div>
+                    <div class="tariffs-comparison__message">Все сайты, работающие на одной лицензии, должны размещаться на одном хостинге и использовать одну копию программного продукта&nbsp;<br>«1С-Битрикс: Управления сайтом».</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tariffs--mobile">
+            <div class="tariffs-wrapper wrapper">
+                <div class="tariffs-checkbox">
+                    <input id="check" class="tariffs-checkbox__input" type="checkbox">
+                    <label for="check" class="tariffs-checkbox__label"></label>
+                    <div class="tariffs-checkbox__text">Показать различия</div>
+                </div>
+                <div class="tariffs-sliders">
+                    <div class="tariffs-cards swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="tariffs-cards__item swiper-slide">
+                                <div class="tariffs-cards__title">Старт</div>
+                                <div class="tariffs-cards__price">
+                                    <div class="tariffs-cards__price--single">5 580 ₽</div>
+                                </div>
+                                <a href="#popup-order" class="popup">
+                                    <button class="tariffs-cards__btn btn--buy">Купить</button>
+                                </a>
+                                <a href="" class="tariffs-cards__link">Подробнее</a>
+                            </div>
+                            <div class="tariffs-cards__item swiper-slide">
+                                <div class="tariffs-cards__title">Стандарт</div>
+                                <div class="tariffs-cards__price">
+                                    <div class="tariffs-cards__price--single">16 110 ₽</div>
+                                </div>
+                                <a href="#popup-order" class="popup">
+                                    <button class="tariffs-cards__btn btn--buy">Купить</button>
+                                </a>
+                                <a href="" class="tariffs-cards__link">Подробнее</a>
+                            </div>
+                            <div class="tariffs-cards__item swiper-slide">
+                                <div class="tariffs-cards__title">Малый бизнес</div>
+                                <div class="tariffs-cards__price">
+                                    <div class="tariffs-cards__price--new">34 765 ₽</div>
+                                    <div class="tariffs-cards__price--old">40 900 ₽</div>
+                                </div>
+                                <a href="#popup-order" class="popup">
+                                    <button class="tariffs-cards__btn btn--buy">Купить</button>
+                                </a>
+                                <a href="" class="tariffs-cards__link">Подробнее</a>
+                            </div>
+                            <div class="tariffs-cards__item swiper-slide">
+                                <div class="tariffs-cards__title">Бизнес</div>
+                                <div class="tariffs-cards__price">
+                                    <div class="tariffs-cards__price--new">71 315 ₽</div>
+                                    <div class="tariffs-cards__price--old">83 900 ₽</div>
+                                </div>
+                                <a href="#popup-order" class="popup">
+                                    <button class="tariffs-cards__btn btn--buy">Купить</button>
+                                </a>
+                                <a href="" class="tariffs-cards__link">Подробнее</a>
+                            </div>
+                            <div class="tariffs-cards__item swiper-slide">
+                                <div class="tariffs-cards__title">Энтерпрайз</div>
+                                <div class="tariffs-cards__price">
+                                    <div class="tariffs-cards__price--single">1 699 000 ₽</div>
+                                </div>
+                                <button class="tariffs-cards__btn btn--request">Оставить заявку</button>
+                                <a href="" class="tariffs-cards__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="tariffs-cards swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="tariffs-cards__item swiper-slide">
+                                <div class="tariffs-cards__title">Старт</div>
+                                <div class="tariffs-cards__price">
+                                    <div class="tariffs-cards__price--single">5 580 ₽</div>
+                                </div>
+                                <a href="#popup-order" class="popup">
+                                    <button class="tariffs-cards__btn btn--buy">Купить</button>
+                                </a>
+                                <a href="" class="tariffs-cards__link">Подробнее</a>
+                            </div>
+                            <div class="tariffs-cards__item swiper-slide">
+                                <div class="tariffs-cards__title">Стандарт</div>
+                                <div class="tariffs-cards__price">
+                                    <div class="tariffs-cards__price--single">16 110 ₽</div>
+                                </div>
+                                <a href="#popup-order" class="popup">
+                                    <button class="tariffs-cards__btn btn--buy">Купить</button>
+                                </a>
+                                <a href="" class="tariffs-cards__link">Подробнее</a>
+                            </div>
+                            <div class="tariffs-cards__item swiper-slide">
+                                <div class="tariffs-cards__title">Малый бизнес</div>
+                                <div class="tariffs-cards__price">
+                                    <div class="tariffs-cards__price--new">34 765 ₽</div>
+                                    <div class="tariffs-cards__price--old">40 900 ₽</div>
+                                </div>
+                                <a href="#popup-order" class="popup">
+                                    <button class="tariffs-cards__btn btn--buy">Купить</button>
+                                </a>
+                                <a href="" class="tariffs-cards__link">Подробнее</a>
+                            </div>
+                            <div class="tariffs-cards__item swiper-slide">
+                                <div class="tariffs-cards__title">Бизнес</div>
+                                <div class="tariffs-cards__price">
+                                    <div class="tariffs-cards__price--new">71 315 ₽</div>
+                                    <div class="tariffs-cards__price--old">83 900 ₽</div>
+                                </div>
+                                <a href="#popup-order" class="popup">
+                                    <button class="tariffs-cards__btn btn--buy">Купить</button>
+                                </a>
+                                <a href="" class="tariffs-cards__link">Подробнее</a>
+                            </div>
+                            <div class="tariffs-cards__item swiper-slide">
+                                <div class="tariffs-cards__title">Энтерпрайз</div>
+                                <div class="tariffs-cards__price">
+                                    <div class="tariffs-cards__price--single">1 699 000 ₽</div>
+                                </div>
+                                <button class="tariffs-cards__btn btn--request">Оставить заявку</button>
+                                <a href="" class="tariffs-cards__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="tariffs-comparison">
+                    <div class="tariffs-comparison-categories">
+                        <div class="tariffs-comparison-categories__item">
+                            <div class="tariffs-comparison-categories__header">
+                                <div class="tariffs-comparison-categories__title">CMS</div>
+                                <div class="tariffs-comparison-categories__arrow">
+                                    <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                </div>
+                            </div>
+                            <div class="tariffs-comparison-categories-list">
+                                <div class="tariffs-comparison-categories-list-titles">
+                                    <div class="tariffs-comparison-categories-list-titles__item">Главный модуль</div>
+                                    <div class="tariffs-comparison-categories-list-titles__item">Сайты24</div>
+                                    <div class="tariffs-comparison-categories-list-titles__item">Число страниц</div>
+                                    <div class="tariffs-comparison-categories-list-titles__item">Управление структурой</div>
+                                    <div class="tariffs-comparison-categories-list-titles__item">Информационные блоки</div>
+                                    <div class="tariffs-comparison-categories-list-titles__item">Highload-блоки</div>
+                                    <div class="tariffs-comparison-categories-list-titles__item">Поиск</div>
+                                    <div class="tariffs-comparison-categories-list-titles__item">Перевод</div>
+                                    <div class="tariffs-comparison-categories-list-titles__item">Форумы и блоки</div>
+                                </div>
+                                <div class="tariffs-comparison-categories-list-wrapper">
+                                    <div class="tariffs-comparison-categories-list-column">
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__number">2</div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__minus"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tariffs-comparison-categories-list-column">
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__infinity">
+                                                <svg><use xlink:href="imgs/sprite.svg#infinity"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                        <div class="tariffs-comparison-categories-list-column__item">
+                                            <div class="tariffs-comparison-categories-list__check-mark">
+                                                <svg><use xlink:href="imgs/sprite.svg#check-mark"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tariffs-comparison-categories__item">
+                            <div class="tariffs-comparison-categories__header">
+                                <div class="tariffs-comparison-categories__title">Интернет-магазин</div>
+                                <div class="tariffs-comparison-categories__arrow">
+                                    <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                </div>
+                            </div>
+                            <div class="tariffs-comparison-categories-list"></div>
+                        </div>
+                        <div class="tariffs-comparison-categories__item">
+                            <div class="tariffs-comparison-categories__header">
+                                <div class="tariffs-comparison-categories__title">Маркетинг</div>
+                                <div class="tariffs-comparison-categories__arrow">
+                                    <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                </div>
+                            </div>
+                            <div class="tariffs-comparison-categories-list"></div>
+                        </div>
+                        <div class="tariffs-comparison-categories__item">
+                            <div class="tariffs-comparison-categories__header">
+                                <div class="tariffs-comparison-categories__title">Производительность</div>
+                                <div class="tariffs-comparison-categories__arrow">
+                                    <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                </div>
+                            </div>
+                            <div class="tariffs-comparison-categories-list"></div>
+                        </div>
+                        <div class="tariffs-comparison-categories__item">
+                            <div class="tariffs-comparison-categories__header">
+                                <div class="tariffs-comparison-categories__title">Безопасность и мобильность</div>
+                                <div class="tariffs-comparison-categories__arrow">
+                                    <svg><use xlink:href="imgs/sprite.svg#arrow-down"></use></svg>
+                                </div>
+                            </div>
+                            <div class="tariffs-comparison-categories-list"></div>
+                        </div>
+                    </div>
+                    <div class="tariffs-comparison__message">Все сайты, работающие на одной лицензии, должны размещаться на одном хостинге и использовать одну копию программного продукта&nbsp;<br>«1С-Битрикс: Управления сайтом».</div>
+                </div>
+            </div>
+        </section>
+
+        @@include("blocks/footer/footer.html")
+        @@include("blocks/popup/popup.html")
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+                }
+            });
+        </script>
+    </body>
+</html>

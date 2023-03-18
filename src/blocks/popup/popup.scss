@@ -1,0 +1,281 @@
+.popup {
+    &__close {
+        position: absolute;
+        top: 24px;
+        right: 20px;
+        width: 27px;
+        height: 27px;
+        cursor: pointer;
+        svg {
+            width: 27px;
+            height: 27px;
+            stroke: $white;
+            stroke-width: 1.2px;
+        }
+    }
+    &-catalog {
+        position: relative;
+        width: 100%;
+        height: 892px;
+        min-height: max-content;
+        background-color: $blackLight;
+    }
+    &-filter {
+        position: relative;
+        width: 375px;
+        margin: 0 auto;
+        padding: 72px 20px 40px 20px;
+        background-color: $black;
+        @include xxs {
+            width: 355px;
+            padding: 72px 10px 40px 10px;
+        }
+    }
+    &-order {
+        position: relative;
+        width: 768px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: $blackLight;
+        @include sm {
+            width: 100%;
+            height: 100vh;
+            min-height: 440px;
+            padding: 72px 20px 14px 20px;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            color: $white;
+            @include sm {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        &-products {
+            margin: 40px 0;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            @include sm {
+                row-gap: 16px;
+            }
+            &__item {
+                display: flex;
+                justify-content: space-between;
+                @include sm {
+                    position: relative;
+                }
+                &-row {
+                    display: flex;
+                    align-items: center;
+                    @include sm {
+                        align-items: flex-start;
+                    }
+                }
+                &-right {
+                    @include sm {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+            &__img {
+                width: 48px;
+                height: 50px;
+                margin-right: 24px;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                @include sm {
+                    width: 40px;
+                    height: 42px;
+                }
+            }
+            &__title {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: $white;
+                max-width: 368px;
+                @include sm {
+                    font-size: 14px;
+                    line-height: 22px;
+                    max-width: calc(100% - 64px);
+                }
+            }
+            &__price {
+                text-align: right;
+                &--single {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $white;
+                    @include sm {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+                &--new {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $red;
+                    @include sm {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+                &--old {
+                    margin-top: 4px;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-decoration-line: line-through;
+                    color: $grey;
+                    @include sm {
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+            }
+            &__counter {
+                @include sm {
+                    margin-left: 64px;
+                    margin-top: 38px;
+                }
+            }
+        }
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            @include sm {
+                position: absolute;
+                bottom: 14px;
+                left: 50%;
+                transform: translateX(-50%);
+                flex-direction: column;
+                row-gap: 16px;
+            }
+        }
+        &__btn {
+            width: 335px;
+            height: 64px;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            cursor: pointer;
+            &:focus {
+                outline: none;
+            }
+            @include sm {
+                height: 56px;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            &--border {
+                background-color: $blackLight;
+                color: $blue;
+                border: 1px solid $blue;
+            }
+            &--blue {
+                background-color: $blue;
+                color: $white;
+                border: none;
+            }
+        }
+    }
+    &-menu {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        min-height: 700px;
+        background: url(../imgs/background/bg.svg) center (center/cover) no-repeat;
+        background-color: $black;
+        .popup {
+            &-header {
+                padding: 26px 20px;
+            }
+            &__logo {
+                width: 122px;
+                height: 28px;
+                img {
+                    width: 100%;
+                }
+            }
+            &-nav {
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+                margin-top: 22px;
+                margin-left: 35px;
+                &__link {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: $white;
+                    text-decoration-line: none;
+                }
+                &__login {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                        stroke: $blue;
+                        fill: none;
+                    }
+                }
+            }
+            &-contacts {
+                position: absolute;
+                left: 20px;
+                bottom: 40px;
+                &__text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: $white;
+                }
+                &__email {
+                    margin-top: 40px;
+                    a {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: $white;
+                        text-decoration-line: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mfp-container {
+    padding: 0;
+}
+
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+	transform: scale(0.8);
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	transform: scale(0.8);
+	opacity: 0;
+}
